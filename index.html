@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanghalan</title>
+    <link rel="icon" href="images/logo.png" type="png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Start of Container -->
+      <div class="container">
+        <!-- Main Row -->
+        <div class="row">
+          <div class="col-lg-9 pe-lg-5">
+            <!-- Start of Navigation -->
+            <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.png" alt="" srcset="" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="series.html">TV Series</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- End of Navigation -->
+            <!-- Start of Header -->
+            <header id="header">
+              <div class="text-white rounded-5 p-5">
+                <h1 class="fw-bold">Welcome to Tanghalan!</h1>
+                <p>Browse the latest tv series & movies for free.</p>
+              </div>
+            </header>
+            <!-- End of Header -->
+            <!-- Movie Section -->
+            <section class="mt-5">
+              <div class="d-flex swiper">
+                <h5 class="fw-bold">Movies</h5>
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="movies-home"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </section>
+            <!-- End of Movie Section -->
+            <!-- Series Section -->
+            <section class="mt-5">
+              <div class="d-flex">
+                <h5 class="fw-bold">Series</h5>
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="series-home"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </section>
+            <!-- End of Series Section -->
+            <!-- Artist Section -->
+            <section class="mt-5">
+              <div class="d-flex">
+                <h5 class="fw-bold">Artists</h5>
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="artist-home"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </section>
+            <!-- End of Artist Section -->
+          </div>
+          <div class="col-lg-3 mt-5 ps-lg-5">
+            <!-- Now Showing Movies -->
+            <div class="mt-4">
+              <h4 class="fw-bold">Now Showing</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="now-showing"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of Now Showing Movies -->
+            <!-- TV Series Airing Today -->
+            <div class="mt-4">
+              <h4 class="fw-bold">TV Series Airing Today</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="series-today"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of TV Series Airing Today -->
+            <!-- Upcoming Movies -->
+            <div class="mt-4">
+              <h4 class="fw-bold">Upcoming Movies</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="upcoming-movies"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of Upcoming Movies -->
+            <!-- TV Series On Air -->
+            <div class="mt-4">
+              <h4 class="fw-bold">TV Series on Air</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="series-on-air"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of TV Series on Air -->
+            <!-- Trending Movies -->
+            <div class="mt-4">
+              <h4 class="fw-bold">Trending Movies</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="trending-movies"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of Trending Movies -->
+            <!-- Trending TV Shows -->
+            <div class="mt-4">
+              <h4 class="fw-bold">Trending TV Shows</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="trending-series"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of Trending TV Shows -->
+            <!-- Trending People -->
+            <div class="mt-4">
+              <h4 class="fw-bold">Trending People</h4>
+              <div class="cube-swiper">
+                <div class="swiper-wrapper pb-3" id="trending-people"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <!-- End of Trending People -->
+          </div>
+        </div>
+        <!-- End of Main Row -->
+      </div>
+      <!-- End of Container -->
+      <footer class="container border-top-red py-2 mt-4">
+        <div class="d-flex justify-content-between text-muted">
+          <small>
+            &copy;<span id="year"></span> John Christopher Enriquez</small
+          >
+          <small>
+            Created using
+            <a
+              href="https://developers.themoviedb.org/3"
+              class="text-muted"
+              target="_blank"
+              >TMDB API</a
+            >
+          </small>
+        </div>
+      </footer>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

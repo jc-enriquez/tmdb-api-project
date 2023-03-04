@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --primary-color: #d22b2b;
+  --light-color: #fff;
+  --light-gray: #dbdbdb;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+#header {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.active {
+  position: relative;
+  font-weight: bold;
+}
+
+.bi-star-fill {
+  color: #ffbf00;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary-color);
+}
+
+.swiper-scrollbar-drag {
+  background: var(--primary-color);
+}
+
+.card-height {
+  height: 27em;
+}
+
+.input-group-text {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-help {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  border: none;
+  font-size: 1.25em;
+}
+
+.btn-help:hover {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.btn-red {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-red:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  opacity: 0.9;
+}
+
+.vh-60 {
+  height: 60vh;
+}
+
+#current {
+  color: var(--primary-color);
+}
+
+.dropdown-menu > li {
+  cursor: pointer;
+  border-bottom: 1px solid var(--light-gray);
+}
+.dropdown-menu > li:hover {
+  background-color: var(--light-gray);
+}
+
+.dropdown-menu > li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown-menu > li.highlight {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.border-top-red {
+  border-top: 1px solid var(--primary-color);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.img-width {
+  width: 20em;
+}
+
+.content-width {
+  width: 60%;
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .content-width {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .active:before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4px;
+    display: inline-block;
+    left: 50%;
+  }
+}

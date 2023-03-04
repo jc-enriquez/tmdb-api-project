@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanghalan - Movies</title>
+    <link rel="icon" href="images/logo.png" type="png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Start of Navigation -->
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" srcset="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="series.html">TV Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="movies.html">Movies</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="btn btn-help d-none d-lg-block"
+            data-bs-toggle="popover"
+            data-bs-title="Hello Visitor!"
+            data-bs-content="This application is created using TMDB API. For more information, please visit https://www.themoviedb.org/"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- End of Navigation -->
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+      </div>
+      <!-- End of Overlay -->
+      <!-- Movies Section -->
+      <section class="container mt-3 mb-3" id="movies-section">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h1 class="fw-bold d-none d-lg-block">Movies</h1>
+          <div class="d-flex mx-auto mx-lg-0">
+            <form class="me-5 me-lg-3" role="search" id="form">
+              <input
+                class="form-control rounded-pill"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search"
+                required
+              />
+            </form>
+            <div class="dropdown">
+              <button
+                class="btn btn-red dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-funnel-fill"></i>
+              </button>
+              <ul class="dropdown-menu py-0" id="tags"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3" id="movies"></div>
+        <nav class="mt-5 d-flex justify-content-center align-items-center">
+          <button class="btn btn-red" id="previous">
+            <i class="bi bi-chevron-double-left"></i>
+          </button>
+          <span id="current" class="mx-5 fw-bold"></span>
+          <button class="btn btn-red" id="next">
+            <i class="bi bi-chevron-double-right"></i>
+          </button>
+        </nav>
+      </section>
+
+      <!-- End of Movies Section -->
+      <footer class="container border-top-red py-2 mt-4">
+        <div class="d-flex justify-content-between text-muted">
+          <small>
+            &copy;<span id="year"></span> John Christopher Enriquez</small
+          >
+          <small>
+            Created using
+            <a
+              href="https://developers.themoviedb.org/3"
+              class="text-muted"
+              target="_blank"
+              >TMDB API</a
+            >
+          </small>
+        </div>
+      </footer>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/movies.js"></script>
+  </body>
+</html>
